@@ -90,7 +90,9 @@
 #          extension then the extension stereotype takes precedence.
 #       c. If an association exists between two extension classes
 #          each in a distinct namespace this is considered unresolvable
-#          without an explicit stereotype on the association.
+#          without an explicit stereotype on the association. It is 
+#          recommended to add the appropriate stereotype to the
+#          association in such scenarios.  
 #
 # Important notes on the <stereotype>=<namespace> mappings below:
 #
@@ -112,7 +114,7 @@
 # Therefore, when adding mappings care should be taken to account 
 # for the above considerations.
 #
-# CDPSM 
+# CGMES 
 CDPSM=http://edf.fr/CDPSM/2016/cdpsm2015#
 CDPSM2=http://iec.ch/TC57/CIM/CDPSM/SchemaExtension/2/0#
 Entsoe=http://entsoe.eu/CIM/SchemaExtension/3/1#
