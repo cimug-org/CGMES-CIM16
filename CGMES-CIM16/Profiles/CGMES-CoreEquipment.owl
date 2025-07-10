@@ -2408,6 +2408,10 @@
     <rdfs:label>name</rdfs:label>
     <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="X43X457a87Xa3X197f3fdc232Xa3X-7fff">
+    <rdf:first rdf:resource="#SubLoadArea"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="X53X198648dXa3X12ff363de54Xa3X-7ffe">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:allValuesFrom rdf:nodeID="X53X198648dXa3X12ff363de54Xa3X-7fff"/>
@@ -3660,7 +3664,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label>SubLoadArea</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SubLoadArea"/>
-    <owl:unionOf rdf:nodeID="Xd2X62458c86Xa3X197e78de188Xa3X-7695"/>
+    <owl:unionOf rdf:nodeID="X43X457a87Xa3X197f3fdc232Xa3X-7fff"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="Xd2X62458c86Xa3X197e78de188Xa3X-769b">
     <rdf:first rdf:resource="#Terminal"/>
@@ -4572,6 +4576,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="#EnergySchedulingType">
     <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#entsoe"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://entsoe.eu/CIM/SchemaExtension/3/1#EnergySchedulingType"/>
     <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
@@ -5361,6 +5366,10 @@
     <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7015"/>
     <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
     <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SubGeographicalRegion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SubLoadArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SubLoadArea"/>
   </rdf:Description>
   <rdf:Description rdf:about="#Substation">
     <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>

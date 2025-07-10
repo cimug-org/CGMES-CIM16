@@ -20,13 +20,13 @@
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns="http://ucaiug.org/ns/CGMES/ShortCircuit-EU/2.0#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:msg="http://langdale.com.au/2005/Message#"
     xmlns:uml="http://langdale.com.au/2005/UML#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://iec.ch/TC57/2013/61970-452/EquipmentShortCircuit/4#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-  xml:base="http://ucaiug.org/ns/CGMES/ShortCircuit-EU/2.0" > 
+  xml:base="http://iec.ch/TC57/2013/61970-452/EquipmentShortCircuit/4" > 
   <rdf:Description rdf:nodeID="X13X4e3dabfXa3X12e7354b6f5Xa3X-5f96">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:allValuesFrom rdf:nodeID="X13X4e3dabfXa3X12e7354b6f5Xa3X-5f97"/>
@@ -1673,6 +1673,495 @@
     <rdfs:label>r0</rdfs:label>
     <owl:equivalentClass rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15#Resistance"/>
   </rdf:Description>
+  <rdf:Description rdf:about="">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment xml:space="preserve">This profile represents the equipment of the power system and their hierarchical relationships.</rdfs:comment>
+    <rdfs:label>ShortCircuit</rdfs:label>
+    <owl:imports rdf:resource="http://iec.ch/TC57/CIM-generic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACDCTerminal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACLineSegment">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:space="preserve">&#xD;
+&#xD;
+&#xD;
+&#xD;
+</rdfs:comment>
+    <rdfs:label>ACLineSegment</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2ced"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cee"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cf0"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cf1"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cf2"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cf3"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6e22"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f6e"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f9c"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7076"/>
+    <rdfs:subClassOf rdf:resource="#Conductor"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ActivePower">
+    <rdfs:label>ActivePower</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AngleDegrees">
+    <rdfs:label>AngleDegrees</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ApparentPower">
+    <rdfs:label>ApparentPower</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AsynchronousMachine">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cd9"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cdb"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cdc"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cde"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cdf"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2ce1"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2ce2"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2ce4"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2ce5"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2ce7"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2ce8"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cea"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2ceb"/>
+    <rdfs:subClassOf rdf:resource="#RotatingMachine"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AsynchronousMachine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#BusbarSection">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>BusbarSection</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-28bc"/>
+    <rdfs:subClassOf rdf:resource="#Connector"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#BusbarSection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Conductance">
+    <rdfs:label>Conductance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ConductingEquipment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="X23X496d729Xa3X151cb6cbb00Xa3X-64a5"/>
+    <rdfs:subClassOf rdf:resource="#Equipment"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Conductor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Conductor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Connector">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Connector"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CurrentFlow">
+    <rdfs:label>CurrentFlow</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#EarthFaultCompensator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1a73"/>
+    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#EarthFaultCompensator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#EnergySource">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="X53X3a75ee4Xa3X14353e8a50cXa3X-4afc"/>
+    <rdfs:subClassOf rdf:nodeID="X53X3a75ee4Xa3X14353e8a50cXa3X-4aff"/>
+    <rdfs:subClassOf rdf:nodeID="X53X3a75ee4Xa3X14353e8a50cXa3X-4b02"/>
+    <rdfs:subClassOf rdf:nodeID="X53X3a75ee4Xa3X14353e8a50cXa3X-4b05"/>
+    <rdfs:subClassOf rdf:nodeID="X53X3a75ee4Xa3X14353e8a50cXa3X-4b08"/>
+    <rdfs:subClassOf rdf:nodeID="X53X3a75ee4Xa3X14353e8a50cXa3X-4b0b"/>
+    <rdfs:subClassOf rdf:nodeID="X53X3a75ee4Xa3X14353e8a50cXa3X-4b0e"/>
+    <rdfs:subClassOf rdf:nodeID="X53X3a75ee4Xa3X14353e8a50cXa3X-4b11"/>
+    <rdfs:subClassOf rdf:nodeID="X53X3a75ee4Xa3X14353e8a50cXa3X-4b14"/>
+    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#EnergySource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Equipment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="X23X496d729Xa3X151cb6cbb00Xa3X-649f"/>
+    <rdfs:subClassOf rdf:nodeID="X23X496d729Xa3X151cb6cbb00Xa3X-64a2"/>
+    <rdfs:subClassOf rdf:resource="#PowerSystemResource"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#EquivalentBranch">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>EquivalentBranch</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2497"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2498"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-249a"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-249b"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-249d"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-249e"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24a0"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24a1"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24a3"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24a4"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24a6"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24a7"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24a9"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24aa"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24ac"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24ad"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24af"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24b0"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24b2"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24b3"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24b5"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24b6"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24b8"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24b9"/>
+    <rdfs:subClassOf rdf:resource="#EquivalentEquipment"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentBranch"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#EquivalentEquipment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentEquipment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#EquivalentInjection">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2485"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2486"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2488"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2489"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-248b"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-248c"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-248e"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-248f"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2491"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2492"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2494"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2495"/>
+    <rdfs:subClassOf rdf:resource="#EquivalentEquipment"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentInjection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ExternalNetworkInjection">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20c2"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20c4"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20c5"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20c7"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20c8"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20ca"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20cb"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20cd"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20ce"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20d0"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20d1"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20d3"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20d4"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20d6"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20d7"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20d9"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20da"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20dd"/>
+    <rdfs:subClassOf rdf:resource="#RegulatingCondEq"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ExternalNetworkInjection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Ground">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Ground"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GroundDisconnector">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#Switch"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#GroundDisconnector"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GroundingImpedance">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-17c6"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-17c7"/>
+    <rdfs:subClassOf rdf:resource="#EarthFaultCompensator"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#GroundingImpedance"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#IdentifiedObject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="X23X496d729Xa3X151cb6cbb00Xa3X-78e3"/>
+    <rdfs:subClassOf rdf:nodeID="Xd2X52fd8b6cXa3X14a9d256ab3Xa3X-7492"/>
+    <rdfs:subClassOf rdf:nodeID="Xd2X52fd8b6cXa3X14a9d256ab3Xa3X-7493"/>
+    <rdfs:subClassOf rdf:nodeID="Xd2X52fd8b6cXa3X14a9d256ab3Xa3X-7496"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Length">
+    <rdfs:label>Length</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LinearShuntCompensator">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20bb"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20bc"/>
+    <rdfs:subClassOf rdf:nodeID="X53Xa2d47eXa3X1425c8fa9f7Xa3X-63be"/>
+    <rdfs:subClassOf rdf:nodeID="X53Xa2d47eXa3X1425c8fa9f7Xa3X-63c4"/>
+    <rdfs:subClassOf rdf:resource="#ShuntCompensator"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#LinearShuntCompensator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Money">
+    <rdfs:label>Money</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MutualCoupling">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:space="preserve">The terminals (first terminal and second terminal) associated with the mutual coupling must have sequence number set.  The terminals must be associated with two different AC line segments.</rdfs:comment>
+    <rdfs:label>MutualCoupling</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6eff"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f00"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f01"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f1f"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f20"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f62"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f63"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f99"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f9a"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6ff8"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6ff9"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6ffa"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7035"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7036"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-704f"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7050"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7056"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7057"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7071"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7072"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7089"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-708a"/>
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#MutualCoupling"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#NonlinearShuntCompensatorPoint">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1d64"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1d65"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1d67"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1d68"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#NonlinearShuntCompensatorPoint"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_ControlArea">
+    <rdfs:label>ControlArea</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Core">
+    <rdfs:label>Core</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Domain">
+    <rdfs:label>Domain</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Equivalents">
+    <rdfs:label>Equivalents</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Generation">
+    <rdfs:label>Generation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_LoadModel">
+    <rdfs:label>LoadModel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Meas">
+    <rdfs:label>Meas</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_OperationalLimits">
+    <rdfs:label>OperationalLimits</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Production">
+    <rdfs:label>Production</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Wires">
+    <rdfs:label>Wires</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PerCent">
+    <rdfs:label>PerCent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PetersenCoil">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-7429"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-742a"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-742c"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-742d"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-742f"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-7430"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-7433"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-7a20"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-7a22"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-7a23"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-7a25"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-7a26"/>
+    <rdfs:subClassOf rdf:resource="#EarthFaultCompensator"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PetersenCoil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PetersenCoilModeKind">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#enumeration"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PetersenCoilModeKind"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PowerSystemResource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PowerTransformer">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:space="preserve">&#xD;
+</rdfs:comment>
+    <rdfs:label>PowerTransformer</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1508"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-150a"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-150b"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-150e"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1511"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1514"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1517"/>
+    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerTransformer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PowerTransformerEnd">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:space="preserve">&#xD;
+&#xD;
+</rdfs:comment>
+    <rdfs:label>PowerTransformerEnd</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="X13X4e3dabfXa3X12e7354b6f5Xa3X-5f96"/>
+    <rdfs:subClassOf rdf:nodeID="X13X4e3dabfXa3X12e7354b6f5Xa3X-5fa5"/>
+    <rdfs:subClassOf rdf:nodeID="X13X4e3dabfXa3X12e7354b6f5Xa3X-5fab"/>
+    <rdfs:subClassOf rdf:nodeID="X13X4e3dabfXa3X12e7354b6f5Xa3X-5fb1"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-123d"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-123e"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-123f"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1240"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1241"/>
+    <rdfs:subClassOf rdf:nodeID="Xd2X62d7e353Xa3X1302305fd75Xa3X-7c0e"/>
+    <rdfs:subClassOf rdf:resource="#TransformerEnd"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerTransformerEnd"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Reactance">
+    <rdfs:label>Reactance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ReactivePower">
+    <rdfs:label>ReactivePower</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RegulatingCondEq">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingCondEq"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Resistance">
+    <rdfs:label>Resistance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RotatingMachine">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#RegulatingCondEq"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Seconds">
+    <rdfs:label>Seconds</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SeriesCompensator">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:space="preserve"></rdfs:comment>
+    <rdfs:label>SeriesCompensator</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-f89"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-f8a"/>
+    <rdfs:subClassOf rdf:nodeID="Xd2X79438f41Xa3X12ff7299e14Xa3X-78ad"/>
+    <rdfs:subClassOf rdf:nodeID="Xd2X79438f41Xa3X12ff7299e14Xa3X-78b0"/>
+    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SeriesCompensator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ShortCircuitRotorKind">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#enumeration"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ShortCircuitRotorKind"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ShuntCompensator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#RegulatingCondEq"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ShuntCompensator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Susceptance">
+    <rdfs:label>Susceptance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Switch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="X23X496d729Xa3X151cb6cbb00Xa3X-6495"/>
+    <rdfs:subClassOf rdf:nodeID="X23X496d729Xa3X151cb6cbb00Xa3X-6496"/>
+    <rdfs:subClassOf rdf:nodeID="X23X496d729Xa3X151cb6cbb00Xa3X-6499"/>
+    <rdfs:subClassOf rdf:nodeID="X23X496d729Xa3X151cb6cbb00Xa3X-649b"/>
+    <rdfs:subClassOf rdf:nodeID="X23X496d729Xa3X151cb6cbb00Xa3X-649c"/>
+    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Switch"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SynchronousMachine">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:space="preserve">&#xD;
+</rdfs:comment>
+    <rdfs:label>SynchronousMachine</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d32"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d35"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d38"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d3b"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d3d"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d3e"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d40"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d41"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d42"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d43"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d44"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d46"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d49"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d4c"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d4f"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d51"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d52"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6eb0"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6ec3"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f34"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7003"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-704a"/>
+    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-707e"/>
+    <rdfs:subClassOf rdf:resource="#RotatingMachine"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Terminal">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#ACDCTerminal"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TransformerEnd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="X73Xb72662Xa3X14eb1effdb4Xa3X-cbe"/>
+    <rdfs:subClassOf rdf:nodeID="X73Xb72662Xa3X14eb1effdb4Xa3X-cc0"/>
+    <rdfs:subClassOf rdf:nodeID="X73Xb72662Xa3X14eb1effdb4Xa3X-cc1"/>
+    <rdfs:subClassOf rdf:nodeID="X73Xb72662Xa3X14eb1effdb4Xa3X-cc4"/>
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Voltage">
+    <rdfs:label>Voltage</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VoltagePerReactivePower">
+    <rdfs:label>VoltagePerReactivePower</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="http://iec.ch/TC57/2013/CIM-schema-cim16#ControlAreaTypeKind.AGC">
     <rdfs:label>AGC</rdfs:label>
   </rdf:Description>
@@ -1960,495 +2449,6 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://langdale.com.au/2007/Buildlet#rdfs-t2b.puml">
     <rdf:type rdf:resource="http://langdale.com.au/2005/Message#Flag"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    <rdfs:comment xml:space="preserve">This profile represents the equipment of the power system and their hierarchical relationships.</rdfs:comment>
-    <rdfs:label>ShortCircuit</rdfs:label>
-    <owl:imports rdf:resource="http://iec.ch/TC57/CIM-generic"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#ACDCTerminal">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ACDCTerminal"/>
-    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#ACLineSegment">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:space="preserve">&#xD;
-&#xD;
-&#xD;
-&#xD;
-</rdfs:comment>
-    <rdfs:label>ACLineSegment</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2ced"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cee"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cf0"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cf1"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cf2"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cf3"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6e22"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f6e"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f9c"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7076"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ACLineSegment"/>
-    <rdfs:subClassOf rdf:resource="#Conductor"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#ActivePower">
-    <rdfs:label>ActivePower</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#AngleDegrees">
-    <rdfs:label>AngleDegrees</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#ApparentPower">
-    <rdfs:label>ApparentPower</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#AsynchronousMachine">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cd9"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cdb"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cdc"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cde"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cdf"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2ce1"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2ce2"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2ce4"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2ce5"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2ce7"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2ce8"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2cea"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2ceb"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#AsynchronousMachine"/>
-    <rdfs:subClassOf rdf:resource="#RotatingMachine"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#BusbarSection">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>BusbarSection</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-28bc"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#BusbarSection"/>
-    <rdfs:subClassOf rdf:resource="#Connector"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Conductance">
-    <rdfs:label>Conductance</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#ConductingEquipment">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="X23X496d729Xa3X151cb6cbb00Xa3X-64a5"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ConductingEquipment"/>
-    <rdfs:subClassOf rdf:resource="#Equipment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Conductor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Conductor"/>
-    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Connector">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Connector"/>
-    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#CurrentFlow">
-    <rdfs:label>CurrentFlow</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#EarthFaultCompensator">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1a73"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#EarthFaultCompensator"/>
-    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#EnergySource">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="X53X3a75ee4Xa3X14353e8a50cXa3X-4afc"/>
-    <rdfs:subClassOf rdf:nodeID="X53X3a75ee4Xa3X14353e8a50cXa3X-4aff"/>
-    <rdfs:subClassOf rdf:nodeID="X53X3a75ee4Xa3X14353e8a50cXa3X-4b02"/>
-    <rdfs:subClassOf rdf:nodeID="X53X3a75ee4Xa3X14353e8a50cXa3X-4b05"/>
-    <rdfs:subClassOf rdf:nodeID="X53X3a75ee4Xa3X14353e8a50cXa3X-4b08"/>
-    <rdfs:subClassOf rdf:nodeID="X53X3a75ee4Xa3X14353e8a50cXa3X-4b0b"/>
-    <rdfs:subClassOf rdf:nodeID="X53X3a75ee4Xa3X14353e8a50cXa3X-4b0e"/>
-    <rdfs:subClassOf rdf:nodeID="X53X3a75ee4Xa3X14353e8a50cXa3X-4b11"/>
-    <rdfs:subClassOf rdf:nodeID="X53X3a75ee4Xa3X14353e8a50cXa3X-4b14"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#EnergySource"/>
-    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Equipment">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="X23X496d729Xa3X151cb6cbb00Xa3X-649f"/>
-    <rdfs:subClassOf rdf:nodeID="X23X496d729Xa3X151cb6cbb00Xa3X-64a2"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Equipment"/>
-    <rdfs:subClassOf rdf:resource="#PowerSystemResource"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#EquivalentBranch">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>EquivalentBranch</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2497"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2498"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-249a"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-249b"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-249d"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-249e"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24a0"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24a1"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24a3"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24a4"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24a6"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24a7"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24a9"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24aa"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24ac"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24ad"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24af"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24b0"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24b2"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24b3"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24b5"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24b6"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24b8"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-24b9"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentBranch"/>
-    <rdfs:subClassOf rdf:resource="#EquivalentEquipment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#EquivalentEquipment">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentEquipment"/>
-    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#EquivalentInjection">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2485"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2486"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2488"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2489"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-248b"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-248c"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-248e"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-248f"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2491"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2492"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2494"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-2495"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#EquivalentInjection"/>
-    <rdfs:subClassOf rdf:resource="#EquivalentEquipment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#ExternalNetworkInjection">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20c2"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20c4"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20c5"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20c7"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20c8"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20ca"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20cb"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20cd"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20ce"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20d0"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20d1"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20d3"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20d4"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20d6"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20d7"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20d9"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20da"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20dd"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ExternalNetworkInjection"/>
-    <rdfs:subClassOf rdf:resource="#RegulatingCondEq"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Ground">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Ground"/>
-    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#GroundDisconnector">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#GroundDisconnector"/>
-    <rdfs:subClassOf rdf:resource="#Switch"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#GroundingImpedance">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-17c6"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-17c7"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#GroundingImpedance"/>
-    <rdfs:subClassOf rdf:resource="#EarthFaultCompensator"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#IdentifiedObject">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="X23X496d729Xa3X151cb6cbb00Xa3X-78e3"/>
-    <rdfs:subClassOf rdf:nodeID="Xd2X52fd8b6cXa3X14a9d256ab3Xa3X-7492"/>
-    <rdfs:subClassOf rdf:nodeID="Xd2X52fd8b6cXa3X14a9d256ab3Xa3X-7493"/>
-    <rdfs:subClassOf rdf:nodeID="Xd2X52fd8b6cXa3X14a9d256ab3Xa3X-7496"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#IdentifiedObject"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Length">
-    <rdfs:label>Length</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#LinearShuntCompensator">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20bb"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-20bc"/>
-    <rdfs:subClassOf rdf:nodeID="X53Xa2d47eXa3X1425c8fa9f7Xa3X-63be"/>
-    <rdfs:subClassOf rdf:nodeID="X53Xa2d47eXa3X1425c8fa9f7Xa3X-63c4"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#LinearShuntCompensator"/>
-    <rdfs:subClassOf rdf:resource="#ShuntCompensator"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Money">
-    <rdfs:label>Money</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#MutualCoupling">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:space="preserve">The terminals (first terminal and second terminal) associated with the mutual coupling must have sequence number set.  The terminals must be associated with two different AC line segments.</rdfs:comment>
-    <rdfs:label>MutualCoupling</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6eff"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f00"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f01"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f1f"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f20"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f62"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f63"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f99"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f9a"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6ff8"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6ff9"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6ffa"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7035"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7036"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-704f"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7050"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7056"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7057"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7071"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7072"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7089"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-708a"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#MutualCoupling"/>
-    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#NonlinearShuntCompensatorPoint">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1d64"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1d65"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1d67"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1d68"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#NonlinearShuntCompensatorPoint"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Package_ControlArea">
-    <rdfs:label>ControlArea</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Package_Core">
-    <rdfs:label>Core</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Package_Domain">
-    <rdfs:label>Domain</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Package_Equivalents">
-    <rdfs:label>Equivalents</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Package_Generation">
-    <rdfs:label>Generation</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Package_LoadModel">
-    <rdfs:label>LoadModel</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Package_Meas">
-    <rdfs:label>Meas</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Package_OperationalLimits">
-    <rdfs:label>OperationalLimits</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Package_Production">
-    <rdfs:label>Production</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Package_Wires">
-    <rdfs:label>Wires</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#PerCent">
-    <rdfs:label>PerCent</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#PetersenCoil">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-7429"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-742a"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-742c"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-742d"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-742f"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-7430"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-7433"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-7a20"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-7a22"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-7a23"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-7a25"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-7a26"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PetersenCoil"/>
-    <rdfs:subClassOf rdf:resource="#EarthFaultCompensator"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#PetersenCoilModeKind">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#enumeration"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PetersenCoilModeKind"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#PowerSystemResource">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerSystemResource"/>
-    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#PowerTransformer">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:space="preserve">&#xD;
-</rdfs:comment>
-    <rdfs:label>PowerTransformer</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1508"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-150a"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-150b"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-150e"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1511"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1514"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1517"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerTransformer"/>
-    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#PowerTransformerEnd">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:space="preserve">&#xD;
-&#xD;
-</rdfs:comment>
-    <rdfs:label>PowerTransformerEnd</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="X13X4e3dabfXa3X12e7354b6f5Xa3X-5f96"/>
-    <rdfs:subClassOf rdf:nodeID="X13X4e3dabfXa3X12e7354b6f5Xa3X-5fa5"/>
-    <rdfs:subClassOf rdf:nodeID="X13X4e3dabfXa3X12e7354b6f5Xa3X-5fab"/>
-    <rdfs:subClassOf rdf:nodeID="X13X4e3dabfXa3X12e7354b6f5Xa3X-5fb1"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-123d"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-123e"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-123f"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1240"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-1241"/>
-    <rdfs:subClassOf rdf:nodeID="Xd2X62d7e353Xa3X1302305fd75Xa3X-7c0e"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PowerTransformerEnd"/>
-    <rdfs:subClassOf rdf:resource="#TransformerEnd"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Reactance">
-    <rdfs:label>Reactance</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#ReactivePower">
-    <rdfs:label>ReactivePower</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#RegulatingCondEq">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RegulatingCondEq"/>
-    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Resistance">
-    <rdfs:label>Resistance</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#RotatingMachine">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#RotatingMachine"/>
-    <rdfs:subClassOf rdf:resource="#RegulatingCondEq"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Seconds">
-    <rdfs:label>Seconds</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#SeriesCompensator">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:space="preserve"></rdfs:comment>
-    <rdfs:label>SeriesCompensator</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-f89"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-f8a"/>
-    <rdfs:subClassOf rdf:nodeID="Xd2X79438f41Xa3X12ff7299e14Xa3X-78ad"/>
-    <rdfs:subClassOf rdf:nodeID="Xd2X79438f41Xa3X12ff7299e14Xa3X-78b0"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SeriesCompensator"/>
-    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#ShortCircuitRotorKind">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#enumeration"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ShortCircuitRotorKind"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#ShuntCompensator">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#ShuntCompensator"/>
-    <rdfs:subClassOf rdf:resource="#RegulatingCondEq"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Susceptance">
-    <rdfs:label>Susceptance</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Switch">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="X23X496d729Xa3X151cb6cbb00Xa3X-6495"/>
-    <rdfs:subClassOf rdf:nodeID="X23X496d729Xa3X151cb6cbb00Xa3X-6496"/>
-    <rdfs:subClassOf rdf:nodeID="X23X496d729Xa3X151cb6cbb00Xa3X-6499"/>
-    <rdfs:subClassOf rdf:nodeID="X23X496d729Xa3X151cb6cbb00Xa3X-649b"/>
-    <rdfs:subClassOf rdf:nodeID="X23X496d729Xa3X151cb6cbb00Xa3X-649c"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Switch"/>
-    <rdfs:subClassOf rdf:resource="#ConductingEquipment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#SynchronousMachine">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:space="preserve">&#xD;
-</rdfs:comment>
-    <rdfs:label>SynchronousMachine</rdfs:label>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d32"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d35"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d38"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d3b"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d3d"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d3e"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d40"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d41"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d42"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d43"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d44"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d46"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d49"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d4c"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d4f"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d51"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xa780c04Xa3X1430c9fe4feXa3X-d52"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6eb0"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6ec3"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-6f34"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-7003"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-704a"/>
-    <rdfs:subClassOf rdf:nodeID="X13Xdc20f33Xa3X128cae1a757Xa3X-707e"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#SynchronousMachine"/>
-    <rdfs:subClassOf rdf:resource="#RotatingMachine"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Terminal">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#Terminal"/>
-    <rdfs:subClassOf rdf:resource="#ACDCTerminal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#TransformerEnd">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="X73Xb72662Xa3X14eb1effdb4Xa3X-cbe"/>
-    <rdfs:subClassOf rdf:nodeID="X73Xb72662Xa3X14eb1effdb4Xa3X-cc0"/>
-    <rdfs:subClassOf rdf:nodeID="X73Xb72662Xa3X14eb1effdb4Xa3X-cc1"/>
-    <rdfs:subClassOf rdf:nodeID="X73Xb72662Xa3X14eb1effdb4Xa3X-cc4"/>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#TransformerEnd"/>
-    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="#Voltage">
-    <rdfs:label>Voltage</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="#VoltagePerReactivePower">
-    <rdfs:label>VoltagePerReactivePower</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>

@@ -17,7 +17,8 @@
 # │   ├── Profiles
 # │   └── Schema
 # │       ├── CDPSM-68968-13-ed2.qea   
-# │       └── CDPSM-68968-13-ed2.namespaces  (manually drop the file from within the CIMTool UI)
+# │       └── CDPSM-68968-13-ed2.namespaces  
+# │           (either manually create or drop the above file into the \Schema folder within the CIMTool UI)
 # ├── .asciidoctorconfig.adoc 
 # ├── .cimtool-settings        
 # ├── .copyright-multi-line  

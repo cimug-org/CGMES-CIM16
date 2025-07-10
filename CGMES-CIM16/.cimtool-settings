@@ -22,6 +22,12 @@ project:
       tool:profile_namespace
               "http://www.ucaiug.org/profile#" .
 
+<http://cimtoole.langdale.com.au/2009/project/Profiles/CGMES-CoreEquipmentShortCircuit.owl>
+      tool:profile_envelope
+              "Profile" ;
+      tool:profile_namespace
+              "http://www.ucaiug.org/profile#" .
+
 <http://cimtoole.langdale.com.au/2009/project/Profiles/CGMES-Operation.owl>
       tool:profile_envelope
               "Profile" ;
@@ -29,6 +35,12 @@ project:
               "http://www.ucaiug.org/profile#" .
 
 <http://cimtoole.langdale.com.au/2009/project/Profiles/CGMES-ShortCircuit.owl>
+      tool:profile_envelope
+              "Profile" ;
+      tool:profile_namespace
+              "http://www.ucaiug.org/profile#" .
+
+<http://cimtoole.langdale.com.au/2009/project/Profiles/TEST.owl>
       tool:profile_envelope
               "Profile" ;
       tool:profile_namespace
