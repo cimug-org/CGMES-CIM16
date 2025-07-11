@@ -26,13 +26,17 @@
 # ├── .project  
 # └── ...
 #
+# If this file exists in the same folder as the schema file when 
+# performing a schema import or creating a new CIMTool project,  
+# CIMTool will automatically import it at the same time. 
+# 
 # These mapping files are intended to be used with EA project files
 # such as .eap, .qea, and .feap files. They are particularly useful 
 # for European/CGMES UML models where specific stereotypes are used
 # represent different namespaced extensions. In such cases (or if 
 # using this approach for your own extensions modeling) including
-# this simple file along with your model will require no changes 
-# made to your UML model.
+# this simple file along with your model should require minimal to
+# no changes made to your UML model.
 # 
 # If present, this file will override any baseuri tagged values 
 # that may have been specified on the model. Simply deleting this 

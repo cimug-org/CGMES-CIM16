@@ -1,11 +1,11 @@
 #
 # This is a stereotype extensions file. By convention a stereotype 
 # extensions file must be named the same as the schema file used for 
-# the project under the ..\Schema directory but with the *.stereotype-extensions 
-# file extension. For example:
+# the project under the ..\Schema directory but named with the 
+# *.stereotype-extensions file extension. For example:
 #
 # C:\
-# ├── CDPSM-CIM16
+# ├── CGMES-CIM16
 # │   ├── .settings 
 # │   ├── Documentation
 # │   │   ├── Images      
@@ -26,12 +26,16 @@
 # ├── .project  
 # └── ...
 #
+# If this file exists in the same folder as the schema file when 
+# performing a schema import or creating a new CIMTool project,  
+# CIMTool will automatically import it at the same time. 
+# 
 # These stereotype extensions files are intended to be used with EA 
 # project files such as .eap, .qea, and .feap files. They are designed
-# to be used to add stereotypes that we not intended to be in the UML
-# but rather to be used to annotate classes, attributes, etc. at the
+# to be used to add stereotypes that do not need to be in the UML
+# but rather are to be used to annotate classes, attributes, etc. at the
 # time of profiling. This can be particularly useful then for the purposes
-# of documentation or within PlantUML diagrams. An example usages is in
+# of documentation or within PlantUML diagrams. An example usage is in
 # the profiling done as part of IEC 619706-452 Ed 3.0 where ShortCircuit
 # and Operation profiles that be co-specified within a Core Equipment profile.
 # In this scenario the ShortCircuit attributes can be annotated with a
