@@ -13,6 +13,8 @@ project:
               "true" ;
       tool:merged_schema_path
               "" ;
+      tool:plantuml_current_profile_preview_style
+              "puml-rdfs-t2b" ;
       tool:self_heal_on_import
               "true" .
 
@@ -35,6 +37,24 @@ project:
               "http://www.ucaiug.org/profile#" .
 
 <http://cimtoole.langdale.com.au/2009/project/Profiles/CGMES-ShortCircuit.owl>
+      tool:profile_envelope
+              "Profile" ;
+      tool:profile_namespace
+              "http://www.ucaiug.org/profile#" .
+
+<http://cimtoole.langdale.com.au/2009/project/Profiles/CGMES-StateVariables.owl>
+      tool:profile_envelope
+              "Profile" ;
+      tool:profile_namespace
+              "http://www.ucaiug.org/profile#" .
+
+<http://cimtoole.langdale.com.au/2009/project/Profiles/CGMES-SteadyStateHypothesis.owl>
+      tool:profile_envelope
+              "Profile" ;
+      tool:profile_namespace
+              "http://www.ucaiug.org/profile#" .
+
+<http://cimtoole.langdale.com.au/2009/project/Profiles/CGMES-Topology.owl>
       tool:profile_envelope
               "Profile" ;
       tool:profile_namespace

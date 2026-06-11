@@ -16,9 +16,8 @@
 # │   ├── Instances
 # │   ├── Profiles
 # │   └── Schema
-# │       ├── CDPSM-68968-13-ed2.qea   
-# │       └── CDPSM-68968-13-ed2.namespaces  
-# │           (either manually create or drop the above file into the \Schema folder within the CIMTool UI)
+# │       ├── CIM17-2_CGMES31v01_PROF-20v02_NC23v66_MS10v01_DES10v01.qea   
+# │       └── CIM17-2_CGMES31v01_PROF-20v02_NC23v66_MS10v01_DES10v01.namespaces 
 # ├── .asciidoctorconfig.adoc 
 # ├── .cimtool-settings        
 # ├── .copyright-multi-line  
@@ -35,8 +34,9 @@
 # for European/CGMES UML models where specific stereotypes are used
 # represent different namespaced extensions. In such cases (or if 
 # using this approach for your own extensions modeling) including
-# this simple file along with your model should require minimal to
-# no changes made to your UML model.
+# this simple file along with your model will minimize or eliminate
+# the amount of preparatory work needed to be made to the UML model 
+# for it to be used within CIMTool.
 # 
 # If present, this file will override any baseuri tagged values 
 # that may have been specified on the model. Simply deleting this 
@@ -99,6 +99,7 @@
 #          recommended to add the appropriate stereotype to the
 #          association in such scenarios.  
 #
+#
 # Important notes on the <stereotype>=<namespace> mappings below:
 #
 # STEREOTYPES:
@@ -120,32 +121,10 @@
 # for the above considerations.
 #
 # CGMES 
-CDPSM=http://edf.fr/CDPSM/2016/cdpsm2015#
-CDPSM2=http://iec.ch/TC57/CIM/CDPSM/SchemaExtension/2/0#
 Entsoe=http://entsoe.eu/CIM/SchemaExtension/3/1#
-Entsoe2=http://entsoe.eu/CIM/SchemaExtension/3/2#
-NEK.no=http://NEK.no/NK57/CIM/CIM100-Extension/1/0#
-MSITE=http://der.edf.fr/mire/MSite-v3.1.a#
+Informative=http://iec.ch/TC57/2013/CIM-schema-cim16/Informative#
 #
-# Network Codes 
-adms=http://www.w3.org/ns/adms#
-European=http://iec.ch/TC57/CIM100-European#
-euvoc=http://publications.europa.eu/ontology/euvoc#
-dc=http://purl.org/dc/elements/1.1/#
-dcat=http://www.w3.org/ns/dcat#
-dct=http://purl.org/dc/terms/#
-dcterms=http://purl.org/dc/terms/#
-dm=http://iec.ch/TC57/61970-552/DifferenceModel/1#
-eumd=http://entsoe.eu/ns/Metadata-European#
-GB=http://GB/placeholder/ext#
-md=http://iec.ch/TC57/61970-552/ModelDescription/1#
-NC=http://entsoe.eu/ns/nc#
-owl=http://www.w3.org/2002/07/owl#
-prof=http://www.w3.org/ns/dx/prof/#
-profcim=http://iec.ch/TC57/ns/CIM/prof-cim#
-prov=http://www.w3.org/ns/prov#
+# Metadata
+MD=http://iec.ch/TC57/61970-552/ModelDescription/1#
+DM=http://iec.ch/TC57/61970-552/DifferenceModel/1#
 rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#
-rdfs=http://www.w3.org/2000/01/rdf-schema#
-skos=http://www.w3.org/2004/02/skos/core#
-sh=http://www.w3.org/ns/shacl#
-xsd=http://www.w3.org/2001/XMLSchema#
